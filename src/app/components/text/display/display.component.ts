@@ -13,16 +13,23 @@ export class DisplayComponent implements OnInit {
   ngOnInit(): void { }
 
   @Input() text!: string;
-  @Input() weight: Weight | undefined;
-  @Input() size!: Size.small | Size.medium | Size.big;
+  @Input() weight: 'bold' | 'semiBold' | 'normal' | undefined;
+  @Input() size!: 'small' | 'small' | 'big';
 
 
 
 
-  getButtonSize = (size: Size | undefined): string => {
-    if (size == Size.small) return 'text-display-small'
-    if (size == Size.medium) return 'text-display-medium'
+  getButtonSize = (size: string): string => {
+    if (size == 'small') return 'text-display-small'
+    if (size == 'big') return 'text-display-medium'
     return 'text-display-big'
   }
+  setFontWeight = (): string => {
 
+    if (this.weight == undefined) return 'font-weight: 400;'
+    if (this.weight == 'bold') return 'font-weight: 800;'
+    if (this.weight == 'semiBold') return 'font-weight: 600;'
+    return 'font-weight: 400;'
+
+  }
 }

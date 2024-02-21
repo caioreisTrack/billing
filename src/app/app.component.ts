@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ThemeService } from './services/theme.service';
 import { DisplayComponent } from "./components/text/display/display.component";
-import "@enum/display_text_enum";
 
 @Component({
   selector: 'app-root',
@@ -18,6 +17,5 @@ export class AppComponent implements OnInit {
     this.theme.loadTheme('light_theme')
   }
   title = 'billing';
-  textSize = Size.medium
 
 }

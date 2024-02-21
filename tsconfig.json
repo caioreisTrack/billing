@@ -13,9 +13,6 @@
       "@services/*": [
         "app/services/*"
       ],
-      "@enum/*": [
-        "app/models/enum/*"
-      ],
     },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
