@@ -1,1 +1,22 @@
-.text-display h1 {}
+@import "@style/colors.scss";
+
+.text-display h1 {
+    color: $tertiary-color-700;
+
+}
+
+
+.text-display-big h1 {
+    font-size: 64px;
+    line-height: 80px;
+}
+
+.text-display-medium h1 {
+    font-size: 56px;
+    line-height: 72px;
+}
+
+.text-display-small h1 {
+    font-size: 48px;
+    line-height: 64px;
+}

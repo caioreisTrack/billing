@@ -1,5 +1,4 @@
-import { Component, Input, EventEmitter, OnInit, Output, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-
+import { Component, Input, OnInit, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 @Component({
   selector: 'text-display',
   standalone: true,
@@ -9,15 +8,21 @@ import { Component, Input, EventEmitter, OnInit, Output, CUSTOM_ELEMENTS_SCHEMA 
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 
 })
+
 export class DisplayComponent implements OnInit {
   ngOnInit(): void { }
 
   @Input() text!: string;
+  @Input() weight: Weight | undefined;
+  @Input() size!: Size.small | Size.medium | Size.big;
 
 
-  @Output() onClick = new EventEmitter<any>();
 
-  onAction(event: any) {
-    this.onClick.emit(event);
+
+  getButtonSize = (size: Size | undefined): string => {
+    if (size == Size.small) return 'text-display-small'
+    if (size == Size.medium) return 'text-display-medium'
+    return 'text-display-big'
   }
+
 }
