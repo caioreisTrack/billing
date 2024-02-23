@@ -1,0 +1,11 @@
+@if(size != "small"){
+<div [class]="'primary-button ' + style">
+    <button onclick="onAction()"><text-heading [text]="label" size="heading5" [weight]="'semiBold'" /></button>
+</div>
+}
+
+@if(size == "small"){
+<div [class]="'primary-button-small ' + style">
+    <button onclick="onAction()"><text-heading [text]="label" size="heading6" [weight]="'semiBold'" /></button>
+</div>
+}

@@ -1,0 +1,12 @@
+<div class="heading-text">
+
+    @if (size === 'heading1' || size == 'heading2') { <div [class]="setTextSize()">
+        <h1 [style]="setFontWeight()">{{text}}</h1>
+    </div> }
+    @if (size === 'heading3' || size == 'heading4') { <div [class]="setTextSize()">
+        <h2 [style]="setFontWeight()">{{text}}</h2>
+    </div> }
+    @if (size === 'heading5' || size == 'heading6') { <div [class]="setTextSize()">
+        <p [style]="setFontWeight()">{{text}}</p>
+    </div> }
+</div>

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component, Input, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 @Component({
   selector: 'text-display',
   standalone: true,
@@ -9,20 +9,22 @@ import { Component, Input, OnInit, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core'
 
 })
 
-export class DisplayComponent implements OnInit {
-  ngOnInit(): void { }
+export class Display {
+
 
   @Input() text!: string;
   @Input() weight: 'bold' | 'semiBold' | 'normal' | undefined;
-  @Input() size!: 'small' | 'small' | 'big';
+  @Input() size!: 'display3' | 'display2' | 'display1';
 
 
 
 
-  getButtonSize = (size: string): string => {
-    if (size == 'small') return 'text-display-small'
-    if (size == 'big') return 'text-display-medium'
-    return 'text-display-big'
+
+  setTextSize = (): string => {
+    if (this.size == 'display3') return 'text-display-small'
+    if (this.size == 'display2') return 'text-display-medium'
+    if (this.size == 'display1') return 'text-display-big'
+    return 'text-display-medium'
   }
   setFontWeight = (): string => {
 

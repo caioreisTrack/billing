@@ -1,0 +1,11 @@
+<div class="body-text " [class]="setTextSize()">
+
+    <ng-container *ngIf="size == 'caution'">
+        <span [style]="setFontWeight()">{{text}}</span>
+    </ng-container>
+
+    <ng-container *ngIf="size != 'caution'">
+
+        <p [style]="setFontWeight()">{{text}}</p>
+    </ng-container>
+</div>
