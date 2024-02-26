@@ -1,13 +1,25 @@
 @import "@style/colors.scss";
 
+.mat-icon {
+    width: 24px;
+    height: 24px;
+}
+
 .primary-button button {
     background-color: $primary-color-400;
     border-radius: 8px;
     height: 48px;
-    width: 192px;
+    min-width: 192px;
     border: 0px;
     color: #fff;
     transition: 300ms;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 16px;
 }
 
 .primary-button button:hover {
@@ -27,10 +39,15 @@
     background-color: $primary-color-400;
     border-radius: 8px;
     height: 40px;
-    width: 112px;
+    min-width: 112px;
     border: 0px;
     color: #fff;
+    display: flex;
     transition: 300ms;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px
 }
 
 .primary-button-small button:hover {
@@ -50,10 +67,15 @@
 .filled button {
     background-color: $primary-color-100;
     border-radius: 8px;
-
     border: 2px solid $primary-color-400;
     color: $primary-color-400;
     transition: 300ms;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 8px;
 }
 
 .filled button:hover {
@@ -71,4 +93,34 @@
     ;
     border: 2px solid $primary-color-600;
     color: $primary-color-600 ;
+}
+
+.disable button {
+    background-color: #D9D9D9;
+    border-radius: 8px;
+    height: 48px;
+    min-width: 192px;
+    border: 0px;
+    color: #BEA5A5;
+    display: flex;
+    transition: 300ms;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 16px;
+}
+
+.disable-small button {
+    background-color: $primary-color-100;
+    border-radius: 8px;
+    border: 2px solid $primary-color-400;
+    color: $primary-color-400;
+    transition: 300ms;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 8px;
 }

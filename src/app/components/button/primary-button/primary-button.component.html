@@ -1,11 +1,35 @@
 @if(size != "small"){
-<div [class]="'primary-button ' + style">
-    <button onclick="onAction()"><text-heading [text]="label" size="heading5" [weight]="'semiBold'" /></button>
+<div [class]="disable ? 'disable' :'primary-button ' + style">
+
+    <button (click)="onAction($event)"
+        [style]="leftIcon ? 'justify-content: flex-start' : rigthIcon ? 'justify-content: flex-end' : ''">
+
+        @if(leftIcon) {
+        <mat-icon aria-hidden="false" [fontIcon]="leftIcon"></mat-icon>
+        }
+        <text-heading [text]="label" size="heading5" [weight]="'semiBold'" />
+
+        @if(rigthIcon) {
+        <mat-icon aria-hidden="false" [fontIcon]="rigthIcon"></mat-icon>
+        }
+    </button>
 </div>
 }
 
 @if(size == "small"){
-<div [class]="'primary-button-small ' + style">
-    <button onclick="onAction()"><text-heading [text]="label" size="heading6" [weight]="'semiBold'" /></button>
+<div [class]="disable ? 'disable' : 'primary-button-small ' + style">
+    <button (click)="onAction($event)"
+        [style]="leftIcon ? 'justify-content: flex-start' : rigthIcon ? 'justify-content: flex-end' : ''">
+        @if(leftIcon) {
+        <mat-icon aria-hidden="false" [fontIcon]="leftIcon"></mat-icon>
+
+        }
+        <text-heading [text]="label" size="heading6" [weight]="'semiBold'" />
+        @if(rigthIcon) {
+        <mat-icon aria-hidden="false" [fontIcon]="rigthIcon"></mat-icon>
+        }
+
+    </button>
+
 </div>
 }

@@ -1,9 +1,13 @@
 <main class="main">
   <div class="content">
-    <text-display text="Testando" size="display1" [weight]="'semiBold'" />
+    <text-display [text]="title" size="display1" [weight]="'semiBold'" />
     <text-heading text="Testando" size="heading2" [weight]="'semiBold'" />
     <text-body text="Testando" size="body1" [weight]="'semiBold'" />
-    <primary-button label="Testando" size="small" [style]="'filled'" />
+    <primary-button label="Testando" size="normal" [style]="'normal'" (onClick)="onActidon('Botão 1')" />
+
+    <secundary-button label="Testando" size="normal" [style]="'normal'" (onClick)="onActidon('botão 2')" />
+    <tertiary-one-button label="Testando" size="normal" [style]="'filled'" (onClick)="onActidon('botão 2')" />
+    <terciary-two-button label="Testando" size="normal" [style]="'normal'" (onClick)="onActidon('botão 2')" />
   </div>
 </main>
 

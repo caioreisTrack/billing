@@ -3,14 +3,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { Heading } from '@components/text/heading/heading.component';
 
 @Component({
-  selector: 'terciary-two-button',
+  selector: 'tertiary-one-button',
   standalone: true,
   imports: [Heading, MatIconModule],
-  templateUrl: './terciary-two.component.html',
-  styleUrl: './terciary-two.component.scss',
+  templateUrl: './tertiary-one.component.html',
+  styleUrl: './tertiary-one.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA]
+
 })
-export class TerciaryTwoButton implements OnInit {
+export class TertiaryOneButton implements OnInit {
   ngOnInit() { }
 
   @Input() label!: string;
@@ -26,5 +27,4 @@ export class TerciaryTwoButton implements OnInit {
   public onAction(event: any) {
     if (!this.disable) this.onClick?.emit(event);
   }
-
 }
