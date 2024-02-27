@@ -1,0 +1,372 @@
+@import "@style/colors.scss";
+
+.mat-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.success-button button {
+    background-color: $success-color-100;
+    border-radius: 8px;
+    height: 48px;
+    min-width: 192px;
+    border: 0px;
+    color: #fff;
+    transition: 300ms;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 16px;
+}
+
+.success-button button:hover {
+    background-color: $success-color-200;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+    ;
+}
+
+.success-button button:active {
+    background-color: $success-color-200;
+
+    box-shadow: inset 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+    ;
+}
+
+.success-button-small button {
+    background-color: $success-color-100;
+    border-radius: 8px;
+    height: 40px;
+    min-width: 112px;
+    border: 0px;
+    color: #fff;
+    display: flex;
+    transition: 300ms;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px
+}
+
+.success-button-small button:hover {
+    background-color: $success-color-200;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+    ;
+}
+
+.success-button-small button:active {
+    background-color: $success-color-200;
+
+    box-shadow: inset 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+    ;
+}
+
+
+.filled-success button {
+    background-color: $tertiary-color-100;
+    border-radius: 8px;
+    border: 2px solid $success-color-200;
+    color: $success-color-200;
+    transition: 300ms;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 8px;
+}
+
+.filled-success button:hover {
+    background-color: $tertiary-color-200;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+    ;
+    border: 2px solid $success-color-100;
+    color: $success-color-100 ;
+}
+
+
+.filled-success button:active {
+    background-color: $tertiary-color-200;
+    box-shadow: inset 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+    ;
+    border: 2px solid $success-color-100;
+    color: $success-color-100 ;
+}
+
+.disable-success button {
+    background-color: #D9D9D9;
+    border-radius: 8px;
+    height: 48px;
+    min-width: 192px;
+    border: 0px;
+    color: $success-color-100;
+    display: flex;
+    transition: 300ms;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 16px;
+}
+
+.disable-small-success button {
+    background-color: #D9D9D9;
+    border-radius: 8px;
+    border: 0px solid $success-color-100;
+    color: $success-color-100;
+    transition: 300ms;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 8px;
+}
+
+
+/*Waring*/
+
+.waring-button button {
+    background-color: $waring-color-100;
+    border-radius: 8px;
+    height: 48px;
+    min-width: 192px;
+    border: 0px;
+    color: #fff;
+    transition: 300ms;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 16px;
+}
+
+.waring-button button:hover {
+    background-color: $waring-color-200;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+    ;
+}
+
+.waring-button button:active {
+    background-color: $waring-color-200;
+
+    box-shadow: inset 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+    ;
+}
+
+.waring-button-small button {
+    background-color: $waring-color-100;
+    border-radius: 8px;
+    height: 40px;
+    min-width: 112px;
+    border: 0px;
+    color: #fff;
+    display: flex;
+    transition: 300ms;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px
+}
+
+.waring-button-small button:hover {
+    background-color: $waring-color-200;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+    ;
+}
+
+.waring-button-small button:active {
+    background-color: $waring-color-200;
+
+    box-shadow: inset 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+    ;
+}
+
+
+.filled-waring button {
+    background-color: $tertiary-color-600;
+    border-radius: 8px;
+    border: 2px solid $waring-color-200;
+    color: $waring-color-200;
+    transition: 300ms;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 8px;
+}
+
+.filled-waring button:hover {
+    background-color: $tertiary-color-700;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+    ;
+    border: 2px solid $waring-color-100;
+    color: $waring-color-100 ;
+}
+
+
+.filled-waring button:active {
+    background-color: $tertiary-color-700;
+    box-shadow: inset 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+    ;
+    border: 2px solid $waring-color-100;
+    color: $waring-color-100 ;
+}
+
+.disable-waring button {
+    background-color: $tertiary-color-500;
+    border-radius: 8px;
+    height: 48px;
+    min-width: 192px;
+    border: 0px;
+    color: $waring-color-100;
+    display: flex;
+    transition: 300ms;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 16px;
+}
+
+.disable-small-waring button {
+    background-color: #D9D9D9;
+    border-radius: 8px;
+    border: 0px solid $waring-color-100;
+    color: $waring-color-100;
+    transition: 300ms;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 8px;
+}
+
+
+/*error*/
+
+.error-button button {
+    background-color: $error-color-100;
+    border-radius: 8px;
+    height: 48px;
+    min-width: 192px;
+    border: 0px;
+    color: #fff;
+    transition: 300ms;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 16px;
+}
+
+.error-button button:hover {
+    background-color: $error-color-200;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+    ;
+}
+
+.error-button button:active {
+    background-color: $error-color-200;
+
+    box-shadow: inset 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+    ;
+}
+
+.error-button-small button {
+    background-color: $error-color-100;
+    border-radius: 8px;
+    height: 40px;
+    min-width: 112px;
+    border: 0px;
+    color: #fff;
+    display: flex;
+    transition: 300ms;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px
+}
+
+.error-button-small button:hover {
+    background-color: $error-color-200;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+    ;
+}
+
+.error-button-small button:active {
+    background-color: $error-color-200;
+
+    box-shadow: inset 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+    ;
+}
+
+
+.filled-error button {
+    background-color: $tertiary-color-100;
+    border-radius: 8px;
+    border: 2px solid $error-color-200;
+    color: $error-color-200;
+    transition: 300ms;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 8px;
+}
+
+.filled-error button:hover {
+    background-color: $tertiary-color-200;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+    ;
+    border: 2px solid $error-color-100;
+    color: $error-color-100 ;
+}
+
+
+.filled-error button:active {
+    background-color: $tertiary-color-200;
+    box-shadow: inset 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+    ;
+    border: 2px solid $error-color-100;
+    color: $error-color-100 ;
+}
+
+.disable-error button {
+    background-color: #D9D9D9;
+    border-radius: 8px;
+    height: 48px;
+    min-width: 192px;
+    border: 0px;
+    color: $error-color-100;
+    display: flex;
+    transition: 300ms;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 16px;
+}
+
+.disable-small-error button {
+    background-color: #D9D9D9;
+    border-radius: 8px;
+    border: 0px solid $error-color-100;
+    color: $error-color-100;
+    transition: 300ms;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 8px;
+}

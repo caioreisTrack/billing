@@ -1,23 +1,22 @@
 import { CUSTOM_ELEMENTS_SCHEMA, Component, EventEmitter, Input, NO_ERRORS_SCHEMA, OnInit, Output } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
-import { Heading } from '@components/text/heading/heading.component';
+import { Body } from '@components/text/body/body.component';
 
 @Component({
-  selector: 'lettering',
+  selector: 'app-tags',
   standalone: true,
-  imports: [Heading, MatIconModule],
-  templateUrl: './lettering.component.html',
-  styleUrl: './lettering.component.scss',
+  imports: [Body, MatIconModule],
+  templateUrl: './tags.component.html',
+  styleUrl: './tags.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA]
 })
-export class Lettering implements OnInit {
+export class TagsComponent implements OnInit {
   ngOnInit() { }
 
   @Input() label!: string;
-  @Input() icon: 'left' | 'rigth' | undefined;
-  @Input() style: 'primary' | 'secundary' | 'tertiary' | 'success' | 'waring' | 'error' | undefined;
+  @Input() icon: string | undefined;
+  @Input() style!: 'primary' | 'secundary' | 'tertiary' | 'success' | 'waring' | 'error';
   @Input() disable: boolean = false;
-  @Input() size: 'small' | 'normal' | undefined
 
 
 

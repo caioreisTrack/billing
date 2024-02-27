@@ -1,0 +1,154 @@
+@import "@style/colors.scss";
+
+.mat-icon {
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.lettring button {
+    background-color: transparent;
+    border-radius: 4px;
+    height: 32px;
+    min-width: 100px;
+    border: 0px;
+    transition: 300ms;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 16px;
+}
+
+.lettring button:hover {
+    background-color: $secundary-color-100;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+    ;
+}
+
+.lettring button:active {
+    background-color: $secundary-color-100;
+    box-shadow: inset 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+    ;
+}
+
+.lettring-small button {
+    background-color: transparent;
+    border-radius: 4px;
+    height: 40px;
+    min-width: 89px;
+    border: 0px;
+    display: flex;
+    transition: 300ms;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px
+}
+
+.lettring-small button:hover {
+    background-color: $secundary-color-100;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+    ;
+}
+
+.lettring-small button:active {
+    background-color: $secundary-color-100;
+
+    box-shadow: inset 0px 3px 1px -2px rgba(0, 0, 0, .2), 0px 2px 2px 0px rgba(0, 0, 0, .14), 0px 1px 5px 0px rgba(0, 0, 0, .12);
+    ;
+}
+
+
+
+
+.disable button {
+    background-color: transparent;
+    border-radius: 8px;
+    height: 32px;
+    min-width: 100px;
+    border: 0px;
+    color: $tertiary-color-100;
+    display: flex;
+    transition: 300ms;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 16px;
+}
+
+.disable-small button {
+    background-color: transparent;
+    border-radius: 8px;
+    border: 0;
+    color: $tertiary-color-100;
+    transition: 300ms;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 8px;
+    height: 40px;
+    min-width: 89px;
+}
+
+
+
+.primary button {
+    color: $primary-color-400;
+}
+
+.primary button:hover,
+.primary button:active {
+    color: $primary-color-500;
+
+}
+
+.secundary button {
+    color: $secundary-color-400;
+}
+
+.secundary button:hover,
+.secundary button:active {
+    color: $secundary-color-500;
+
+}
+
+
+.tertiary button {
+    color: $tertiary-color-700;
+}
+
+.success button {
+    color: $success-color-100;
+}
+
+.success button:hover,
+.success button:active {
+    color: $success-color-200;
+}
+
+.waring button {
+    color: $waring-color-100;
+}
+
+.waring button:hover,
+.waring button:active {
+    color: $waring-color-200;
+}
+
+.error button {
+    color: $error-color-100;
+}
+
+.error button:active,
+.error button:active {
+    color: $error-color-200;
+}

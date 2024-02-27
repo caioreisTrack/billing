@@ -1,0 +1,10 @@
+<div [class]="disable ? 'disable' : 'chip ' + style">
+    <button (click)="onAction($event)">
+        @if(icon) {
+        <mat-icon aria-hidden="false" [fontIcon]="icon"></mat-icon>
+
+        }
+        <text-body [text]="label" size="body2" [weight]="'normal'" />
+        <mat-icon (click)="iconAction($event)" aria-hidden="false" [fontIcon]="'close'"></mat-icon>
+    </button>
+</div>

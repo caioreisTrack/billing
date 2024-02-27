@@ -1,0 +1,76 @@
+@import "@style/colors.scss";
+
+.mat-icon {
+    width: 20px;
+    height: 20px;
+    font-size: 12.5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.chip button {
+    background-color: #fff;
+    border-radius: 4px;
+    height: 24px;
+    border: 0px;
+    transition: 300ms;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 8px;
+}
+
+.primary button {
+    border: $primary-color-400 solid 1px;
+    color: $primary-color-400;
+}
+
+.primary button:hover {
+    background-color: #eca23766;
+}
+
+.primary button>.mat-icon:hover {
+    background-color: $primary-color-400 ;
+    color: $primary-color-100;
+    border-radius: 4px;
+    transition: 300ms;
+}
+
+
+.secundary button {
+    border: $secundary-color-200 solid 1px;
+    color: $secundary-color-200;
+}
+
+.secundary button:hover {
+    background-color: #36227738;
+}
+
+.secundary button>.mat-icon:hover {
+    background-color: $secundary-color-200 ;
+    color: $secundary-color-100;
+    border-radius: 4px;
+    transition: 300ms;
+}
+
+
+
+.tertiary button {
+    border: $tertiary-color-200 solid 1px;
+    color: $tertiary-color-200;
+}
+
+.tertiary button:hover {
+    background-color: #bebebe56;
+}
+
+.tertiary button>.mat-icon:hover {
+    background-color: $tertiary-color-200 ;
+    color: $tertiary-color-100;
+    border-radius: 4px;
+    transition: 300ms;
+}

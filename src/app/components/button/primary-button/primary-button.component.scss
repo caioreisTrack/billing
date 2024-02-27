@@ -3,6 +3,11 @@
 .mat-icon {
     width: 24px;
     height: 24px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .primary-button button {

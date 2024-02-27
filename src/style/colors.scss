@@ -26,16 +26,11 @@ $tertiary-color-600: #202020;
 $tertiary-color-700: #141414;
 
 
+$success-color-100: #51B12F;
+$success-color-200: #3A8022;
 
+$waring-color-100: #D1EB36;
+$waring-color-200: #D2CC05;
 
-$semaphoric-color: (
-    sucess: (1:#51B12F,
-        2:#3A8022,
-    ),
-    waring: (1: #D1EB36,
-        2: #D2CC05,
-    ),
-    error: (1:#E91D1D,
-        2:#9C0303,
-    ),
-);
+$error-color-100: #E91D1D;
+$error-color-200: #9C0303;

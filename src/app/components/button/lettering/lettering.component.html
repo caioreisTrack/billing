@@ -1,1 +1,33 @@
-<p>lettering works!</p>
+@if(size != "small"){
+<div [class]="disable ? 'disable' :  ' lettring ' + style">
+
+    <button (click)="onAction($event)">
+
+        @if(icon == 'left') {
+        <mat-icon aria-hidden="false" fontIcon="info"></mat-icon>
+        }
+        <text-heading [text]="label" size="heading5" [weight]="'semiBold'" />
+
+        @if(icon == 'rigth') {
+        <mat-icon aria-hidden="false" fontIcon="info"></mat-icon>
+        }
+    </button>
+</div>
+}
+
+@if(size == "small"){
+<div [class]="disable ? 'disable' : style + ' lettring-small '">
+    <button (click)="onAction($event)">
+        @if(icon == 'left') {
+        <mat-icon aria-hidden="false" fontIcon="info"></mat-icon>
+
+        }
+        <text-heading [text]="label" size="heading6" [weight]="'semiBold'" />
+        @if(icon == "rigth") {
+        <mat-icon aria-hidden="false" fontIcon="info"></mat-icon>
+        }
+
+    </button>
+
+</div>
+}

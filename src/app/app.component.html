@@ -4,10 +4,17 @@
     <text-heading text="Testando" size="heading2" [weight]="'semiBold'" />
     <text-body text="Testando" size="body1" [weight]="'semiBold'" />
     <primary-button label="Testando" size="normal" [style]="'normal'" (onClick)="onActidon('Botão 1')" />
-
     <secundary-button label="Testando" size="normal" [style]="'normal'" (onClick)="onActidon('botão 2')" />
     <tertiary-one-button label="Testando" size="normal" [style]="'filled'" (onClick)="onActidon('botão 2')" />
-    <terciary-two-button label="Testando" size="normal" [style]="'normal'" (onClick)="onActidon('botão 2')" />
+    <tertiary-two-button label="Testando" size="normal" [style]="'normal'" (onClick)="onActidon('botão 2')" />
+    <alert-button alertType="waring" label="Testando" [style]="'normal'" [disable]="true" />
+    <lettering [style]="'primary'" label="Testando" [icon]="'left'" size="small" />
+    <lettering [style]="'secundary'" label="Testando" [icon]="'left'" />
+    <lettering [style]="'tertiary'" label="Testando" [icon]="'left'" />
+    <lettering [style]="'success'" label="Testando" [icon]="'left'" />
+    <lettering [style]="'error'" label="Testando" [icon]="'rigth'" />
+    <lettering [style]="'waring'" label="Testando" [icon]="'left'" />
+    <chip label="Testando" [style]="'tertiary'" (closeAction)="onActidon('Botão de fechar')" />
   </div>
 </main>
 

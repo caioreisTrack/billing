@@ -3,14 +3,14 @@ import { MatIconModule } from '@angular/material/icon';
 import { Heading } from '@components/text/heading/heading.component';
 
 @Component({
-  selector: 'terciary-two-button',
+  selector: 'tertiary-two-button',
   standalone: true,
   imports: [Heading, MatIconModule],
-  templateUrl: './terciary-two.component.html',
-  styleUrl: './terciary-two.component.scss',
+  templateUrl: './tertiary-two.component.html',
+  styleUrl: './tertiary-two.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA]
 })
-export class TerciaryTwoButton implements OnInit {
+export class TertiaryTwoButton implements OnInit {
   ngOnInit() { }
 
   @Input() label!: string;
