@@ -1,1 +1,18 @@
-<p>menu works!</p>
+<nav class="navBar">
+
+    <ul>
+        @for (link of links; track $index) {
+
+        <li [ngClass]="{cssClass: active == link.title ? 'active' : ''}">
+            <a class="menuItens" [routerLink]="[link.path]" [weight]="'normal'"
+                (click)="setActive(link.title)">{{link.title}}</a>
+
+        </li>
+        }
+
+    </ul>
+
+
+
+
+</nav>
