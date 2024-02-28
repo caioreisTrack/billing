@@ -1,11 +1,12 @@
 import { Routes } from '@angular/router';
 
 import { HomeComponent } from './view/home/home.component';
-import { HeadingComponent } from './view/heading/heading.component';
+import { HeadingDesignComponent } from './view/heading/heading.component';
 import { ButtonComponent } from './view/button/button.component';
 import { ChipComponent } from '@components/chip/chip.component';
 import { TagsComponent } from '@components/tags/tags.component';
-import { InputsComponent } from './view/inputs/inputs.component';
+import { InputsViewComponent } from './view/inputs/inputs.component';
+import { AvatarView } from './view/avatar/avatar.component';
 
 export const appRoutes: Routes = [{
     path: 'home',
@@ -19,7 +20,7 @@ export const appRoutes: Routes = [{
     pathMatch: 'full'
 }, {
     path: 'heading',
-    component: HeadingComponent,
+    component: HeadingDesignComponent,
     data: {
         title: 'Heading'
     }
@@ -43,8 +44,15 @@ export const appRoutes: Routes = [{
     }
 }, {
     path: 'inputs',
-    component: InputsComponent,
+    component: InputsViewComponent,
     data: {
         title: 'Inputs'
+    },
+},
+{
+    path: 'avatar',
+    component: AvatarView,
+    data: {
+        title: "Avatar"
     }
 },];

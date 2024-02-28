@@ -3,7 +3,7 @@
     <ul>
         @for (link of links; track $index) {
 
-        <li [ngClass]="{cssClass: active == link.title ? 'active' : ''}">
+        <li [class]="{active: active == link.title}">
             <a class="menuItens" [routerLink]="[link.path]" [weight]="'normal'"
                 (click)="setActive(link.title)">{{link.title}}</a>
 

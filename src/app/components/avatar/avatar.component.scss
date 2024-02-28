@@ -1,0 +1,51 @@
+@import "@style/colors.scss";
+
+.big {
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.medium {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.small {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.primary {
+    background-color: $primary-color-400;
+    color: $tertiary-color-100;
+}
+
+.secundary {
+    background-color: $secundary-color-300;
+    color: $tertiary-color-100;
+}
+
+.tertiary {
+    background-color: $tertiary-color-100;
+    color: $tertiary-color-400;
+    border: 1px solid $tertiary-color-300;
+}

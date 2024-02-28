@@ -17,7 +17,7 @@ nav.navBar {
 
 .navBar ul {
     padding: 0;
-    padding-left: 9px;
+    padding-left: 0px;
 }
 
 .navBar li {
@@ -26,9 +26,15 @@ nav.navBar {
     display: flex;
     align-items: center;
     flex-direction: row;
+    padding-left: 12px;
 }
 
 li.active {
     background-color: $tertiary-color-100;
-    color: $secundary-color-700;
+    color: $tertiary-color-700;
+    border-right: solid 10px #19101f;
+}
+
+nav.navBar .active a {
+    color: $tertiary-color-700;
 }

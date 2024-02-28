@@ -1,0 +1,17 @@
+@if(size == 'big'){
+<div [className]="'big ' + style">
+    <text-heading [text]="avatarName()" [size]="'heading3'" [weight]="'semiBold'" />
+</div>
+}
+
+@if(size == 'medium'){
+<div [className]="'medium ' + style">
+    <text-heading [text]="avatarName()" [size]="'heading4'" [weight]="'semiBold'" />
+</div>
+}
+
+@if(size == 'small'){
+<div [className]="'small ' + style">
+    <text-heading [text]="avatarName()" [size]="'heading6'" [weight]="'semiBold'" />
+</div>
+}

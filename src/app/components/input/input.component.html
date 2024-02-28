@@ -1,0 +1,8 @@
+<div class="billingInput">
+    <input class="" (ngModel)="type ?? 'text'" (input)="sendTheNewValue($event)" [placeholder]="placeholder ?? ''">
+
+
+    @if(icon) {
+    <mat-icon aria-hidden="false" [fontIcon]="icon"></mat-icon>
+    }
+</div>

@@ -57,7 +57,6 @@ export class MenuComponent implements OnInit {
 
   setActive(page: string) {
     this.active = page;
-    console.log(page)
   }
 
 }
