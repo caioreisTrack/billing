@@ -10,7 +10,7 @@
     transition: 300ms;
     color: $tertiary-color-300;
     font-weight: 500;
-    width: 96%;
+    width: calc(100% - 32px);
 }
 
 
@@ -38,6 +38,47 @@
     width: 32px;
     height: 32px;
     position: absolute;
-    top: 10px;
-    right: 16px;
+    top: 26px;
+    right: 18px;
+    color: $primary-color-500;
+}
+
+div.errors {
+    color: $error-color-200;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    margin: 0;
+    margin-bottom: 4px;
+
+}
+
+.errors mat-icon {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    font-size: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.errorColors input {
+    border: 1px solid $error-color-200;
+    color: $error-color-200;
+}
+
+.errorColors mat-icon {
+    color: $error-color-200;
+}
+
+.errorColors input:focus {
+
+    border: 1px solid $error-color-200;
+    outline: 0px solid $error-color-200;
+    box-shadow: 0px 3px 1px -2px #00000027, 0px 2px 2px 0px #00000017, 0px 1px 5px 0px #00000017;
+
 }
