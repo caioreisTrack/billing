@@ -1,7 +1,11 @@
 main.main {
-
     display: grid;
     grid-template-columns: 20% 1fr;
+    position: relative;
+    min-height: 1px;
+    gap: 0px 0px;
+}
 
-    gap: 0px 15px;
+.main-content {
+    padding: 15px
 }

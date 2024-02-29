@@ -1,1 +1,11 @@
+<br>
+
 <app-input (onChange)="sendTheNewValue($event)" placeholder="Digite aqui" icon="search" />
+
+<br>
+
+<div>
+    <app-input (onChange)="sendTheNewValue($event)" placeholder="Digite aqui" icon="search"
+        [errors]='["Testando erro","Erro ao acessar tela, por favor tente novamente", "Senha incorreta"]'
+        [hasError]="true" />
+</div>

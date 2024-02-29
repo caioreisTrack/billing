@@ -1,8 +1,14 @@
-<div class="billingInput">
-    <input class="" (ngModel)="type ?? 'text'" (input)="sendTheNewValue($event)" [placeholder]="placeholder ?? ''">
+<div class=" billingInput" [class]="{errorColors: hasError}">
 
-
+    <input (ngModel)="type ?? 'text'" (input)="sendTheNewValue($event)" [placeholder]="placeholder ?? ''">
     @if(icon) {
-    <mat-icon aria-hidden="false" [fontIcon]="icon"></mat-icon>
+    <mat-icon aria-hidden="false" [fontIcon]="icon" />
     }
 </div>
+@for (error of errors; track $index) {
+
+<div class="errors">
+    <mat-icon aria-hidden="false" [fontIcon]="'warning'" />
+    <text-body [text]="error" size="caution" />
+</div>
+}
